@@ -1,8 +1,8 @@
 class Readeasy < Formula
   desc "Terminal text-to-speech reader that makes reading easier"
   homepage "https://github.com/ItsJasonPierrot/readeasy"
-  url "https://github.com/ItsJasonPierrot/readeasy/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "8343cf2369ad595d1d288d3b94e2afbef458fd5eb6f96e23a8b025a6964c69bd"
+  url "https://github.com/ItsJasonPierrot/readeasy/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "3cc7f80c40d428c31eeeab69b0633b610869bc6298928580b706d6e982d50af8"
   license "MIT"
   head "https://github.com/ItsJasonPierrot/readeasy.git", branch: "master"
 
@@ -11,6 +11,13 @@ class Readeasy < Formula
   def install
     system "make", "VERSION=v#{version}"
     bin.install "readeasy"
+  end
+
+  def caveats
+    <<~EOS
+      Reading PDFs (readeasy file.pdf) needs poppler's pdftotext:
+        brew install poppler
+    EOS
   end
 
   test do
