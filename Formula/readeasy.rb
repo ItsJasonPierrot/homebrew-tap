@@ -1,8 +1,8 @@
 class Readeasy < Formula
   desc "Terminal text-to-speech reader that makes reading easier"
   homepage "https://github.com/ItsJasonPierrot/readeasy"
-  url "https://github.com/ItsJasonPierrot/readeasy/archive/refs/tags/v1.5.1.tar.gz"
-  sha256 "6336d57825bd28f4f1cb108132c201ebb15aca877370957b6cd6bccacfd8d088"
+  url "https://github.com/ItsJasonPierrot/readeasy/archive/refs/tags/v1.6.0.tar.gz"
+  sha256 "241d9289b7686999c5bb1916db5e96451f5be13d26f490075a28d3ba0baa69db"
   license "MIT"
   head "https://github.com/ItsJasonPierrot/readeasy.git", branch: "master"
 
